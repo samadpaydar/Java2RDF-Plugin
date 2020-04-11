@@ -1,0 +1,1133 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://java2rdf.um.ac.ir/"
+     xml:base="http://java2rdf.um.ac.ir/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:java2rdf="http://java2rdf.um.ac.ir/">
+    <owl:Ontology rdf:about="http://java2rdf.um.ac.ir/">
+        <owl:versionIRI rdf:resource="http://java2rdf.um.ac.ir/1.0"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology to represent Java source code information</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samad Paydar
+samadpaydar@gmail.com
+s-paydar@um.ac.ir</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Java2RDF Ontology</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/contains -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/contains">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/Project"/>
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/SourceFile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/declaresLocalVariable -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/declaresLocalVariable"/>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/definesAnonymousClass -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/definesAnonymousClass"/>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasAnnotation -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasAnnotation">
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/Annotation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasCase -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasCase">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/SwitchStatement"/>
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/SwitchCase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasDocComment -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasDocComment">
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/DocComment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasDocTag -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasDocTag">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/DocComment"/>
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/DocTag"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasElse -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasElse">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/IfStatement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasParameter -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasParameter">
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/Parameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasThen -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasThen">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/IfStatement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/extends -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/extends">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/TypeDeclaration"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://java2rdf.um.ac.ir/extends"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://java2rdf.um.ac.ir/TypeDeclaration"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasBody -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasBody"/>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasCatchBlock -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasCatchBlock">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/TryStatement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasConditionalStatement -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasConditionalStatement">
+        <rdfs:subPropertyOf rdf:resource="http://java2rdf.um.ac.ir/hasControlStatement"/>
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasConstructor -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasConstructor">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/Class"/>
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/Constructor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasControlStatement -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasControlStatement">
+        <rdfs:subPropertyOf rdf:resource="http://java2rdf.um.ac.ir/hasStatement"/>
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasExceptionType -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasExceptionType">
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/Class"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasExpression -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasExpression">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/Expression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasField -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasField">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/TypeDeclaration"/>
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/Field"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasFinallyBlock -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasFinallyBlock">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/TryStatement"/>
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/FinallyBlock"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasImportDeclaration -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasImportDeclaration">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/SourceFile"/>
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/Import"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasLoopStatement -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasLoopStatement">
+        <rdfs:subPropertyOf rdf:resource="http://java2rdf.um.ac.ir/hasControlStatement"/>
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasMethod -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasMethod">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/TypeDeclaration"/>
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasPackageDeclaration -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasPackageDeclaration">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/SourceFile"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://java2rdf.um.ac.ir/hasPackageDeclaration"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://java2rdf.um.ac.ir/Package"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasReturnType -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasReturnType">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/Method"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://java2rdf.um.ac.ir/hasReturnType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://java2rdf.um.ac.ir/JavaType"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasStatement -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasStatement">
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasThrownExceptionType -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasThrownExceptionType">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/Method"/>
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/Class"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasType -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/hasType">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/Field"/>
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/JavaType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/implements -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/implements">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/Class"/>
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/Interface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/imports -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/imports">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/Import"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://java2rdf.um.ac.ir/imports"/>
+                <owl:someValuesFrom rdf:resource="http://java2rdf.um.ac.ir/Class"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://java2rdf.um.ac.ir/imports"/>
+                <owl:someValuesFrom rdf:resource="http://java2rdf.um.ac.ir/Interface"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://java2rdf.um.ac.ir/imports"/>
+                <owl:someValuesFrom rdf:resource="http://java2rdf.um.ac.ir/Package"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/instantiates -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/instantiates">
+        <owl:inverseOf rdf:resource="http://java2rdf.um.ac.ir/isInstantiatedBy"/>
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/Method"/>
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/Class"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/invokes -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/invokes">
+        <owl:inverseOf rdf:resource="http://java2rdf.um.ac.ir/isInvokedBy"/>
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/isDefinedIn -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/isDefinedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://java2rdf.um.ac.ir/isDefinedIn"/>
+                <owl:someValuesFrom rdf:resource="http://java2rdf.um.ac.ir/Class"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://java2rdf.um.ac.ir/isDefinedIn"/>
+                <owl:someValuesFrom rdf:resource="http://java2rdf.um.ac.ir/Interface"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://java2rdf.um.ac.ir/SourceFile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/isInstantiatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/isInstantiatedBy"/>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/isInvokedBy -->
+
+    <owl:ObjectProperty rdf:about="http://java2rdf.um.ac.ir/isInvokedBy">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://java2rdf.um.ac.ir/hasDescription">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasDimension -->
+
+    <owl:DatatypeProperty rdf:about="http://java2rdf.um.ac.ir/hasDimension">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasParameterCount -->
+
+    <owl:DatatypeProperty rdf:about="http://java2rdf.um.ac.ir/hasParameterCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasPath -->
+
+    <owl:DatatypeProperty rdf:about="http://java2rdf.um.ac.ir/hasPath">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/SourceFile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasPhysicalLOC -->
+
+    <owl:DatatypeProperty rdf:about="http://java2rdf.um.ac.ir/hasPhysicalLOC">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasText -->
+
+    <owl:DatatypeProperty rdf:about="http://java2rdf.um.ac.ir/hasText">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/isArray -->
+
+    <owl:DatatypeProperty rdf:about="http://java2rdf.um.ac.ir/isArray">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/isPrimitiveType -->
+
+    <owl:DatatypeProperty rdf:about="http://java2rdf.um.ac.ir/isPrimitiveType">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasConditionalStatementDepth -->
+
+    <owl:DatatypeProperty rdf:about="http://java2rdf.um.ac.ir/hasConditionalStatementDepth">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasImportDeclarationCount -->
+
+    <owl:DatatypeProperty rdf:about="http://java2rdf.um.ac.ir/hasImportDeclarationCount">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/SourceFile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasLoopDepth -->
+
+    <owl:DatatypeProperty rdf:about="http://java2rdf.um.ac.ir/hasLoopDepth">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasModifier -->
+
+    <owl:DatatypeProperty rdf:about="http://java2rdf.um.ac.ir/hasModifier">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/Member"/>
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/TypeDeclaration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://java2rdf.um.ac.ir/hasName">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/Member"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://java2rdf.um.ac.ir/hasNumber">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/hasStatementCount -->
+
+    <owl:DatatypeProperty rdf:about="http://java2rdf.um.ac.ir/hasStatementCount">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/Method"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/isDefault -->
+
+    <owl:DatatypeProperty rdf:about="http://java2rdf.um.ac.ir/isDefault">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/SwitchCase"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Determines whether a SwitchCase statement is the default case</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/isSingleTypeImport -->
+
+    <owl:DatatypeProperty rdf:about="http://java2rdf.um.ac.ir/isSingleTypeImport">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/Import"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/isStaticImport -->
+
+    <owl:DatatypeProperty rdf:about="http://java2rdf.um.ac.ir/isStaticImport">
+        <rdfs:domain rdf:resource="http://java2rdf.um.ac.ir/Import"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/Annotation -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/Annotation"/>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/AnonymousClass -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/AnonymousClass">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/TypeDeclaration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/DocComment -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/DocComment"/>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/DocTag -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/DocTag"/>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/Enum -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/Enum">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/TypeDeclaration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/LocalVariableDeclarationStatement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/LocalVariableDeclarationStatement">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/VariableDeclarationStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/Parameter -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/Parameter"/>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/Project -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/Project"/>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/ArrayAccess -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/ArrayAccess">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/ArrayCreation -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/ArrayCreation">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/ArrayInitializer -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/ArrayInitializer">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/AssertStatement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/AssertStatement">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/Assignment -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/Assignment">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/Block -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/Block">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/BooleanLiteral -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/BooleanLiteral">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/BreakStatement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/BreakStatement">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/CastExpression -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/CastExpression">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/CharacterLiteral -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/CharacterLiteral">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/Class -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/Class">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/TypeDeclaration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/ClassInstanceCreation -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/ClassInstanceCreation">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/ConditionalExpression -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/ConditionalExpression">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/Constructor -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/Constructor">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/ConstructorInvocation -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/ConstructorInvocation">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/ContinueStatement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/ContinueStatement">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/DoStatement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/DoStatement">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/EnhancedForStatement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/EnhancedForStatement">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/Expression -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/Expression"/>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/ExpressionStatement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/ExpressionStatement">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/Field -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/Field">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Member"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/FieldAccess -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/FieldAccess">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/FinallyBlock -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/FinallyBlock">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Block"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/FloatingPointLiteral -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/FloatingPointLiteral">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/ForStatement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/ForStatement">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/IfStatement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/IfStatement">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/Import -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/Import"/>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/InfixExpression -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/InfixExpression">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/InstanceofExpression -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/InstanceofExpression">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/IntegerLiteral -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/IntegerLiteral">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/Interface -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/Interface">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/TypeDeclaration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/JavaType -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/JavaType"/>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/LabeledStatement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/LabeledStatement">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/Member -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/Member"/>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/Method -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/Method">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Member"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/MethodInvocation -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/MethodInvocation">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/Name -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/Name">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/NullLiteral -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/NullLiteral">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/Package -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/Package"/>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/ParenthesizedExpression -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/ParenthesizedExpression">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/PostfixExpression -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/PostfixExpression">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/PrefixExpression -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/PrefixExpression">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/Primitive -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/Primitive">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/JavaType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/ReturnStatement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/ReturnStatement">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/SourceFile -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/SourceFile"/>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/Statement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/Statement"/>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/StringLiteral -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/StringLiteral">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/SuperConstructorInvocation -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/SuperConstructorInvocation">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/SuperFieldAccess -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/SuperFieldAccess">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/SuperMethodInvocation -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/SuperMethodInvocation">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/SwitchCase -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/SwitchCase">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+        <rdfs:comment>This correspondes to the &apos;case&apos;/&apos;default&apos; statements in the switch case block</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/SwitchStatement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/SwitchStatement">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/SynchronizedStatement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/SynchronizedStatement">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/ThisExpression -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/ThisExpression">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/ThrowStatement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/ThrowStatement">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/TryStatement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/TryStatement">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/TypeDeclaration -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/TypeDeclaration">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/JavaType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/TypeDeclarationStatement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/TypeDeclarationStatement">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/TypeLiteral -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/TypeLiteral">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/VariableDeclarationExpression -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/VariableDeclarationExpression">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/ExpressionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/VariableDeclarationStatement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/VariableDeclarationStatement">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://java2rdf.um.ac.ir/WhileStatement -->
+
+    <owl:Class rdf:about="http://java2rdf.um.ac.ir/WhileStatement">
+        <rdfs:subClassOf rdf:resource="http://java2rdf.um.ac.ir/Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/ArrayAccess"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/ArrayCreation"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/ArrayInitializer"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/Assignment"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/BooleanLiteral"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/CastExpression"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/CharacterLiteral"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/ClassInstanceCreation"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/ConditionalExpression"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/FieldAccess"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/FloatingPointLiteral"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/InfixExpression"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/InstanceofExpression"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/IntegerLiteral"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/MethodInvocation"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/Name"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/NullLiteral"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/ParenthesizedExpression"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/PostfixExpression"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/PrefixExpression"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/StringLiteral"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/SuperFieldAccess"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/SuperMethodInvocation"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/ThisExpression"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/TypeLiteral"/>
+            <rdf:Description rdf:about="http://java2rdf.um.ac.ir/VariableDeclarationExpression"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

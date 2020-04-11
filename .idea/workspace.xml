@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d8ca8c2d-a0eb-4c0e-a365-800a1c231096" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/sample/CodeBasedSample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java2RDFPlugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java2RDFPlugin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/arq.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/icu4j_3_4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/iri.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jena.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/JavaConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/JavaConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/Predicates.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/Predicates.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/visitor/JavaClassVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/visitor/JavaClassVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/visitor/JavaFieldVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/visitor/JavaFieldVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/visitor/JavaFileVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/visitor/JavaFileVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/visitor/JavaMethodVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/visitor/JavaMethodVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/visitor/JavaSpecificStatementVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/visitor/JavaSpecificStatementVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/visitor/JavaStatementVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/visitor/JavaStatementVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/visitor/JavaSwitchCaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/visitor/JavaSwitchCaseVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/visitor/VisitorUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java2RDFPlugin/ir/ac/um/java2rdf/visitor/VisitorUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/JavaConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/JavaConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/Predicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/Predicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaClassVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaClassVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaFieldVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaFieldVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaFileVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaFileVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaMethodVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaMethodVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaSpecificStatementVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaSpecificStatementVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaStatementVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaStatementVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaSwitchCaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaSwitchCaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/VisitorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/VisitorUtils.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Predicates.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/Predicates.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="142" column="36" selection-start-line="142" selection-start-column="36" selection-end-line="142" selection-end-column="36" />
+              <folding>
+                <element signature="e#10899#10900#0" expanded="true" />
+                <element signature="e#10944#10945#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CodeBasedSample.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/sample/CodeBasedSample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaConverter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/JavaConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConvertToRDFAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/ui/ConvertToRDFAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="43">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>HAS_S</find>
+      <find>HAS_ST</find>
+      <find>.HAS_STA</find>
+      <find>switch</find>
+      <find>model =</find>
+      <find>HAS_STATEME</find>
+      <find>IMPLEMENTS</find>
+      <find>implemente</find>
+      <find>processInterfacesImplementedByClass</find>
+      <find>catchb</find>
+      <find>HAS_CATCH_BLOCK</find>
+      <find>HAS_PARAMETER_COUNT</find>
+      <find>.PROJECT</find>
+      <find>PROJECT_RESOURCE</find>
+      <find>HAS_ELSE</find>
+      <find>HAS_DESCRIPTION</find>
+      <find>HAS_ANNOTATION</find>
+      <find>HAS_TEXT</find>
+      <find>HAS_TAG</find>
+      <find>HAS_PHYSICAL_LOC</find>
+      <find>version</find>
+      <find>1.0.1</find>
+      <find>catch</find>
+      <find>base</find>
+      <find>http://java2rdf.um.ac.ir/#</find>
+      <find>http://java2rdf.um.ac.ir/</find>
+      <find>psiFile</find>
+      <find>load</find>
+      <find>com.hp.hpl.jena.</find>
+      <find>haspara</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>JAVA2RDF_NAMESPACE</replace>
+      <replace>literalObject</replace>
+      <replace>http://java2rdf.um.ac.ir/</replace>
+      <replace>org.apache.jena.</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\Projects\Plugin for Android Studio\MyPluginForAndroidStudio\src\ir\ac\um\javardfizer</dir>
+      <dir>D:\Projects\Plugin for Android Studio\MyPluginForAndroidStudio\src\ir\ac\um\javardfizer\visitor</dir>
+      <dir>D:\Projects\Plugin for Android Studio\MyPluginForAndroidStudio\src\ir\ac\um\java2rdf\visitor</dir>
+      <dir>D:\Projects\Plugin for Android Studio\MyPluginForAndroidStudio\resources</dir>
+      <dir>D:\Projects\Plugin for Android Studio\MyPluginForAndroidStudio\src</dir>
+      <dir>D:\Projects\Plugin for Android Studio\MyPluginForAndroidStudio\src\ir\ac\um\java2rdf</dir>
+      <dir>D:\Projects\Plugin for Android Studio\MyPluginForAndroidStudio</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/ir/ac/um/JavaConverter.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/Constants.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/ConvertToRDFAction.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/Java2RDFVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/VisitorUtils.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/JavaClassVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/JavaFileVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/BreakVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/SwitchLabelVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/ContinueVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/JavaMethodVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/visitor/ContinueVisitor.java" />
+        <option value="$PROJECT_DIR$/resources/rules.txt" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/visitor/BreakVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/Constants.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/ProgressDialog.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/visitor/JavaMethodBodyVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/visitor/JavaFieldVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/visitor/JavaClassVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/visitor/SwitchLabelVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/visitor/JavaStatementVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/Predicates.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/visitor/JavaSpecificStatementVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/visitor/JavaFileVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/visitor/VisitorUtils.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/visitor/JavaMethodVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/ui/JavaConverterToolWindow.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/ui/JavaConverterToolWindowFactory.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/ConvertToRDFAction.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/JavaConverter.java" />
+        <option value="$PROJECT_DIR$/rules.txt" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/javardfizer/rules.txt" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaFileVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/BreakVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/ContinueVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/SwitchLabelVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaStatementVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/VisitorUtils.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaSpecificStatementVisitor.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaMethodVisitor.java" />
+        <option value="$PROJECT_DIR$/lib/rules.txt" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/java2rdf/rules.txt" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaSwitchCaseVisitor.java" />
+        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
+        <option value="$PROJECT_DIR$/Ontology/j2rdf.owl" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/java2rdf/Constants.java" />
+        <option value="$PROJECT_DIR$/resources/ontology/java2rdf.owl" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/java2rdf/ui/ConvertToRDFAction.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/java2rdf/JavaConverter.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/java2rdf/Predicates.java" />
+        <option value="$PROJECT_DIR$/src/ir/ac/um/java2rdf/sample/CodeBasedSample.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="814" />
+    <option name="height" value="867" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Java2RDFPlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyPluginForAndroidStudio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java2RDFPlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyPluginForAndroidStudio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java2RDFPlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyPluginForAndroidStudio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java2rdf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java2RDFPlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyPluginForAndroidStudio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java2rdf" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\Plugin for Android Studio\MyPluginForAndroidStudio" />
+      <recent name="D:\Projects\Plugin for Android Studio\MyPluginForAndroidStudio\resources" />
+      <recent name="D:\Projects\Plugin for Android Studio\MyPluginForAndroidStudio\resources\images" />
+      <recent name="D:\Projects\Plugin for Android Studio\MyPluginForAndroidStudio\src\ir\ac\um\javardfizer" />
+      <recent name="D:\Projects\Plugin for Android Studio\MyPluginForAndroidStudio\src" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ir.ac.um.javardfizer.visitor" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ir.ac.um.javardfizer.visitor" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\Plugin for Android Studio\MyPluginForAndroidStudio\src\ir\ac\um\javardfizer" />
+      <recent name="D:\Projects\Plugin for Android Studio\MyPluginForAndroidStudio\resources\META-INF" />
+      <recent name="D:\Projects\Plugin for Android Studio\MyPluginForAndroidStudio\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.CodeBasedSample">
+    <configuration name="CodeBasedSample (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ir.ac.um.java2rdf.sample.CodeBasedSample" />
+      <module name="Java2RDFPlugin" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ir.ac.um.java2rdf.sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="CodeBasedSample (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ir.ac.um.java2rdf.sample.CodeBasedSample" />
+      <module name="Java2RDFPlugin" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ir.ac.um.java2rdf.sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="CodeBasedSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ir.ac.um.java2rdf.sample.CodeBasedSample" />
+      <module name="Java2RDFPlugin" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ir.ac.um.java2rdf.sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="JavaFileVisitor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ir.ac.um.java2rdf.visitor.JavaFileVisitor" />
+      <module name="Java2RDFPlugin" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ir.ac.um.java2rdf.visitor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="Plugin" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="Java2RDFPlugin" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="Java2RDFPlugin" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <list>
+      <item itemvalue="Plugin.Plugin" />
+      <item itemvalue="Application.JavaFileVisitor" />
+      <item itemvalue="Application.CodeBasedSample" />
+      <item itemvalue="Application.CodeBasedSample (1)" />
+      <item itemvalue="Application.CodeBasedSample (2)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CodeBasedSample" />
+        <item itemvalue="Application.CodeBasedSample (2)" />
+        <item itemvalue="Application.CodeBasedSample (1)" />
+        <item itemvalue="Application.JavaFileVisitor" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8ca8c2d-a0eb-4c0e-a365-800a1c231096" name="Default" comment="" />
+      <created>1546772696400</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1546772696400</updated>
+      <workItem from="1546772698321" duration="8667000" />
+      <workItem from="1546859304578" duration="597000" />
+      <workItem from="1547014862567" duration="1471000" />
+      <workItem from="1547016419232" duration="12303000" />
+      <workItem from="1547033400800" duration="6080000" />
+      <workItem from="1547099246302" duration="18884000" />
+      <workItem from="1547279676681" duration="25318000" />
+      <workItem from="1547378394246" duration="7173000" />
+      <workItem from="1547446989578" duration="11019000" />
+      <workItem from="1547460518663" duration="15000" />
+      <workItem from="1547538277816" duration="11321000" />
+      <workItem from="1547556068042" duration="43000" />
+      <workItem from="1547900023251" duration="93000" />
+      <workItem from="1548223999987" duration="2162000" />
+      <workItem from="1548227078442" duration="247000" />
+      <workItem from="1548227357867" duration="7000" />
+      <workItem from="1548227397380" duration="849000" />
+      <workItem from="1548229489493" duration="2062000" />
+      <workItem from="1548241416790" duration="117000" />
+      <workItem from="1548310589525" duration="250000" />
+      <workItem from="1548311236379" duration="1043000" />
+      <workItem from="1548312755491" duration="388000" />
+      <workItem from="1548320805683" duration="510000" />
+      <workItem from="1548321828369" duration="487000" />
+      <workItem from="1548322876668" duration="692000" />
+      <workItem from="1548323701398" duration="2891000" />
+      <workItem from="1548326837818" duration="1915000" />
+      <workItem from="1548494546025" duration="7837000" />
+      <workItem from="1548505969613" duration="200000" />
+      <workItem from="1548566903807" duration="6722000" />
+      <workItem from="1548759939652" duration="6758000" />
+      <workItem from="1548848075669" duration="2874000" />
+      <workItem from="1549107954756" duration="4542000" />
+      <workItem from="1549277200899" duration="1722000" />
+      <workItem from="1549279198801" duration="5511000" />
+      <workItem from="1549454435739" duration="36000" />
+      <workItem from="1549455095590" duration="13000" />
+      <workItem from="1549456373201" duration="334000" />
+      <workItem from="1549456898919" duration="567000" />
+      <workItem from="1549457707106" duration="754000" />
+      <workItem from="1549458885201" duration="276000" />
+      <workItem from="1549459586849" duration="103000" />
+      <workItem from="1549460677900" duration="600000" />
+      <workItem from="1549462725141" duration="5386000" />
+      <workItem from="1549778866482" duration="2061000" />
+      <workItem from="1549800553374" duration="147000" />
+      <workItem from="1549970723086" duration="9352000" />
+      <workItem from="1550058440513" duration="5193000" />
+      <workItem from="1550065275284" duration="2801000" />
+      <workItem from="1550068138397" duration="779000" />
+      <workItem from="1550126516990" duration="595000" />
+      <workItem from="1550299375362" duration="683000" />
+      <workItem from="1550409095838" duration="597000" />
+      <workItem from="1550492437636" duration="5950000" />
+      <workItem from="1550586811578" duration="7248000" />
+    </task>
+    <task id="LOCAL-00001" summary="an empty line is removed from the rules file">
+      <created>1549463522298</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1549463522298</updated>
+    </task>
+    <task id="LOCAL-00002" summary="renamed plugin id">
+      <created>1549464901181</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1549464901181</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="209438000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.498125" weight="0.3285528" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.366875" side_tool="true" weight="0.25162974" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.633125" visible="true" weight="0.33767927" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.215625" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.499375" weight="0.32985657" />
+      <window_info anchor="bottom" id="Java2RDF" order="8" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.499375" weight="0.14471969" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Java RDFizer" order="8" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Java RDFizer" order="12" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.633125" visible="true" weight="0.25162974" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.499375" weight="0.32985657" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.366875" side_tool="true" visible="true" weight="0.25162974" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.499375" weight="0.14471969" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.498125" weight="0.3285528" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.215625" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="an empty line is removed from the rules file" />
+    <MESSAGE value="renamed plugin id" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed plugin id" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaFileVisitor.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaFileVisitor.java</url>
+          <line>78</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaStatementVisitor.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaSpecificStatementVisitor.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaSpecificStatementVisitor.java</url>
+          <line>168</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="15" />
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/ui/content/Content.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/javafx-src.zip!/com/sun/javafx/binding/StringFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/wm/ToolWindow.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/execution/ui/ConsoleView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/psi/PsiNamedElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/psi/PsiCheckedRenameElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/psi/PsiFileSystemItem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="56" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/psi/PsiDirectory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/java-api.jar!/com/intellij/psi/PsiLiteralExpression.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/util.jar!/com/intellij/openapi/util/UserDataHolder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaFieldVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/application/Application.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/javardfizer/ui/JavaConverterToolWindow.java" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/execution/filters/TextConsoleBuilderFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/images/icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/wm/ToolWindowFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="21" selection-start-line="18" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/ui/content/ContentFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rules.txt" />
+    <entry file="file://$PROJECT_DIR$/Java2RDFPlugin.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/ProgressDialog.java" />
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/ui/JavaConverterToolWindowFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/Java2RDFPlugin/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/psi/PsiElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/java-api.jar!/com/intellij/psi/PsiAnnotationMemberValue.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/java-api.jar!/com/intellij/psi/PsiExpression.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/java-api.jar!/com/intellij/psi/PsiCallExpression.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/java-api.jar!/com/intellij/psi/PsiMethodCallExpression.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/java-api.jar!/com/intellij/psi/JavaRecursiveElementVisitor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-130">
+          <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/BreakVisitor.java" />
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/ContinueVisitor.java" />
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/SwitchLabelVisitor.java" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/java-impl.jar!/com/intellij/psi/impl/source/tree/java/PsiMethodCallExpressionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="50" column="104" selection-start-line="50" selection-start-column="81" selection-end-line="50" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/java-api.jar!/com/intellij/psi/JavaElementVisitor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="260" column="16" selection-start-line="260" selection-start-column="16" selection-end-line="260" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaSwitchCaseVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaClassVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/rules.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/rules.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaStatementVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaMethodVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="129" column="56" selection-start-line="129" selection-start-column="56" selection-end-line="129" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaFileVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="36" column="34" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/JavaSpecificStatementVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="313" column="51" selection-start-line="313" selection-start-column="51" selection-end-line="313" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/visitor/VisitorUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="265" column="56" selection-start-line="265" selection-start-column="56" selection-end-line="265" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ontology/j2rdf.owl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="16" column="83" selection-start-line="16" selection-start-column="83" selection-end-line="16" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ontology/java2rdf.owl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jena-core-3.10.0.jar!/org/apache/jena/graph/Node.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/JavaConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/ui/ConvertToRDFAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/Predicates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="142" column="36" selection-start-line="142" selection-start-column="36" selection-end-line="142" selection-end-column="36" />
+          <folding>
+            <element signature="e#10899#10900#0" expanded="true" />
+            <element signature="e#10944#10945#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ir/ac/um/java2rdf/sample/CodeBasedSample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Java2RDFPlugin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
